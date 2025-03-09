@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>何斌 - 工程造价专业简历</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --accent-color: #e74c3c;
+        }
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: 'Segoe UI', '微软雅黑', sans-serif;
+        }
+        body { 
+            background: #f8f9fa; 
+            padding: 40px;
+            line-height: 1.7;
+            color: var(--secondary-color);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            padding: 40px 50px;
+            color: white;
+        }
+        h1 { 
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        .position {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .section-title {
+            font-size: 1.4em;
+            margin: 35px 0 20px;
+            padding: 10px 0;
+            border-bottom: 3px solid var(--primary-color);
+            display: flex;
+            align-items: center;
+        }
+        .section-title::before {
+            content: "▌";
+            margin-right: 12px;
+            color: var(--accent-color);
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 0 50px;
+        }
+        .experience-card {
+            background: #fdfdfd;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 15px 0;
+            transition: transform 0.3s;
+            position: relative;
+        }
+        .experience-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+        .date-tag {
+            position: absolute;
+            right: 25px;
+            top: 25px;
+            background: var(--primary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        .skill-bar {
+            height: 8px;
+            background: #eee;
+            border-radius: 4px;
+            margin: 15px 0;
+        }
+        .skill-progress {
+            height: 100%;
+            background: var(--primary-color);
+            border-radius: 4px;
+            width: 0;
+            transition: width 1s ease-in-out;
+        }
+        .tag {
+            display: inline-block;
+            padding: 5px 15px;
+            background: #f0f4f8;
+            border-radius: 20px;
+            margin: 5px 3px;
+            font-size: 0.9em;
+        }
+        .award {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .grid-2 { grid-template-columns: 1fr; }
+            .header { padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">
+            <h1>何 斌</h1>
+            <div class="position">工程造价 | BIM建模 | 成本分析</div>
+        </div>
+
+        <!-- 主体内容 -->
+        <div class="grid-2">
+            <!-- 左列 -->
+            <div>
+                <!-- 教育背景 -->
+                <div class="section-title">🎓 教育背景</div>
+                <div class="experience-card">
+                    <div class="date-tag">2022-2025</div>
+                    <h3>湖南汽车工程职业学院</h3>
+                    <p>工程造价专业（专科）</p>
+                    <ul style="margin-top:15px;">
+                        <li>GPA：3.8/4.0（专业前15%）</li>
+                        <li>核心课程：BIM技术应用、工程招投标、造价软件实务</li>
+                        <li><span class="award">2023全国高校BIM设计大赛</span> 团队三等奖</li>
+                    </ul>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width:90%"></div>
+                    </div>
+                    <div>
+                        <span class="tag">广联达GCL</span>
+                        <span class="tag">Revit</span>
+                        <span class="tag">CAD</span>
+                    </div>
+                </div>
+
+                <!-- 专业技能 -->
+                <div class="section-title">🛠 技术矩阵</div>
+                <div class="experience-card">
+                    <h3>软件能力</h3>
+                    <p>广联达GCL ▶▶▶ <span class="award">专家级</span></p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width:95%"></div>
+                    </div>
+                    
+                    <p>Revit建模 ▶▶▶ <span class="award">进阶</span></p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width:80%"></div>
+                    </div>
+
+                    <h3 style="margin-top:25px;">专业证书</h3>
+                    <ul>
+                        <li>二级造价工程师（预计2025年考取）</li>
+                        <li>全国BIM技能等级考试一级</li>
+                        <li>AutoCAD认证工程师</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 右列 -->
+            <div>
+                <!-- 项目经验 -->
+                <div class="section-title">🚀 项目经历</div>
+                
+                <div class="experience-card">
+                    <div class="date-tag">2023.06-08</div>
+                    <h3>某商业综合体造价咨询项目</h3>
+                    <ul>
+                        <li>独立完成<span class="award">12,000㎡</span>建筑模型建立</li>
+                        <li>通过BIM碰撞检测优化<span class="award">7处管线冲突</span></li>
+                        <li>编制工程量清单，误差率<span class="award">≤2.5%</span></li>
+                        <li>使用Excel VBA开发<span class="award">成本自动比对工具</span></li>
+                    </ul>
+                    <div style="margin-top:15px;">
+                        <span class="tag">BIM协同</span>
+                        <span class="tag">成本优化</span>
+                        <span class="tag">VBA编程</span>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="date-tag">2023.09-12</div>
+                    <h3>校园实训中心改造成本控制</h3>
+                    <ul>
+                        <li>主导<span class="award">3,500㎡</span>改造项目预算编制</li>
+                        <li>通过材料比价节约<span class="award">8.7%</span>成本</li>
+                        <li>建立动态成本监控仪表盘</li>
+                        <li>获评<span class="award">校级优秀实训项目</span></li>
+                    </ul>
+                    <div style="margin-top:15px;">
+                        <span class="tag">预算编制</span>
+                        <span class="tag">成本分析</span>
+                        <span class="tag">Power BI</span>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="date-tag">2024.01-03</div>
+                    <h3>装配式建筑造价对比研究</h3>
+                    <ul>
+                        <li>分析<span class="award">6类</span>预制构件成本差异</li>
+                        <li>建立标准化<span class="award">造价数据库</span></li>
+                        <li>编制对比报告获企业采纳</li>
+                    </ul>
+                    <div style="margin-top:15px;">
+                        <span class="tag">装配式建筑</span>
+                        <span class="tag">数据分析</span>
+                        <span class="tag">行业研究</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部技能标签 -->
+        <div style="padding:30px 50px; background:#f8f9fa; margin-top:40px;">
+            <div class="section-title">🌟 技能图谱</div>
+            <div style="display: flex; gap:15px; flex-wrap:wrap;">
+                <span class="tag" style="background:var(--primary-color); color:white;">工程量清单编制</span>
+                <span class="tag" style="background:var(--accent-color); color:white;">BIM协同设计</span>
+                <span class="tag" style="border:1px solid var(--primary-color);">成本预测分析</span>
+                <span class="tag" style="border:1px solid var(--accent-color);">招投标管理</span>
+                <span class="tag">Excel高级分析</span>
+                <span class="tag">CAD施工图深化</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 技能条动画
+        document.addEventListener('DOMContentLoaded', function() {
+            const progressBars = document.querySelectorAll('.skill-progress');
+            progressBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => bar.style.width = width, 500);
+            });
+        });
+    </script>
+</body>
+</html>
